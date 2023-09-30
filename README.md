@@ -21,3 +21,5 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+
+<!-- python .\setup.py bdist_msi -->

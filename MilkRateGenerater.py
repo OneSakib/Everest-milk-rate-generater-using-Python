@@ -63,12 +63,13 @@ def generate():
             for snf in range(snfstart.get(), snfend.get() + 1):
                 for fat in range(fatstart.get(), fatend.get() + 1):
                     if fat > 65:
-                        if fat > 99 and snf > 99:
-                            price = int(
-                                (((snf * snfunit) + (fat * fatunit)) / 10) * 100)
-                        else:
-                            price = int(
-                                (((snf * snfunit) + (fat * fatunit)) / 10 + (rate.get() * (fat - 65) / 65)) * 100)
+                        price = int(rate.get()/65*fat*100)                        
+                        # if fat > 99 and snf > 99:
+                        #     price = int(
+                        #         (((snf * snfunit) + (fat * fatunit)) / 10) * 100)
+                        # else:
+                        #     price = int(
+                        #         (((snf * snfunit) + (fat * fatunit)) / 10 + (rate.get() * (fat - 65) / 65)) * 100)
                     if fat < 66:
                         price = int(((snf * snfunit) + (fat * fatunit)) * 10)
                     if count == 3:
