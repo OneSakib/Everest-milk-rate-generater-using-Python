@@ -40,3 +40,6 @@ setup(
 
     executables=executables
 )
+
+# Remove bdist folder
+shutil.rmtree('build')
