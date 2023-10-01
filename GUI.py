@@ -66,7 +66,6 @@ def generate():
                 for fat in range(fatstart.get(), fatend.get() + 1):
                     if fat > 65:
                         price = int((rate.get()/65*fat+above65.get())*100)    
-                        print("ABOVE",int((rate.get()/65*fat)*100) ,price   )                    
                         if len(str(price))>4:
                             price = int((rate.get()/65*fat+above65.get())*10)                        
                         # if fat > 99 and snf > 99:

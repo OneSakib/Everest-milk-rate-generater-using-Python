@@ -1,6 +1,7 @@
 from cx_Freeze import Executable, setup
 import sys
 import os
+import shutil
 
 PYTHON_INSTALL_DIR = os.path.dirname(sys.executable)
 os.environ['TCL_LIBRARY'] = os.path.join(PYTHON_INSTALL_DIR, 'tcl', 'tcl8.6')
